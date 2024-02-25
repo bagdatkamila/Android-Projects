@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Искать..."
+            android:inputType="text"
+            android:maxLines="1" />
+
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextSearch"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/orange"
+            android:text="Искать" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пиццы"
+                android:textColor="@color/orange"
+                android:background="@drawable/bg_button_disabled"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btCombo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Комбо"
+                android:textColor="@color/orange"
+                android:background="@drawable/bg_button_enabled"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btSnacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Закуски"
+                android:textColor="@color/orange"
+                android:background="@drawable/bg_button_enabled"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кофе"
+                android:textColor="@color/orange"
+                android:background="@drawable/bg_button_enabled"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btDessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Десерты"
+                android:textColor="@color/orange"
+                android:background="@drawable/bg_button_enabled"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пиццы"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+</LinearLayout>

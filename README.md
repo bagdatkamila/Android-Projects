@@ -2,7 +2,7 @@ Dodo Pizza app
 
 First of all, my main activity. I tried to do it like cards. Also I added the part after search, where you can scroll it, as in original app. So when you click it, the others become disabled (in our case grey), clicked one will be orange. However it still contains bags. 
 
-![Screenshot_20240225_131127](https://github.com/bagdatkamila/Android-Projects/assets/123236855/b55208ea-696f-482b-bf0d-04d1414ee5c4 {width=100px})
+![Screenshot_20240225_131127](https://github.com/bagdatkamila/Android-Projects/assets/123236855/b55208ea-696f-482b-bf0d-04d1414ee5c4{width=100px})
 
 Search works correctly. It supposed to be searchview, but i couldn't do it, but did it with EditText
 ![Screenshot_20240225_131710](https://github.com/bagdatkamila/Android-Projects/assets/123236855/44efe0bf-e2f3-4c61-a35d-3477eee86c59 {width=100px})
